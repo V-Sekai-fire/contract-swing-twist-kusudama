@@ -1,7 +1,7 @@
 {"version": "1.2.0",
  "packagesDir": ".lake/packages",
  "packages":
- [{"url": "https://github.com/v-sekai-multiplayer-fabric/lean-duckdb",
+ [{"url": "https://github.com/V-Sekai-fire/datasource-duckdb",
    "type": "git",
    "subDir": null,
    "scope": "",
