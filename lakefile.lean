@@ -25,6 +25,7 @@ lean_lib «SwingTwistKusudama» where
 
 -- Moved from godot/misc/humanoid_kusudama_rom/lean (the original "kusudama" project).
 lean_lib «Kusudama» where
+  globs := #[.andSubmodules `Kusudama]
 lean_lib «WristRom» where
 lean_lib «JointRom» where
 lean_lib «IKFold» where
