@@ -3,8 +3,13 @@ open Lake DSL System
 
 package «swing_twist_kusudama» where
 
+-- Plausible v4.34.0 of the V-Sekai-fire fork, the commit contract-rotation-star pins.
 require plausible from git
-  "https://github.com/leanprover-community/plausible" @ "main"
+  "https://github.com/V-Sekai-fire/plausible.git" @ "118aa17ee84656b8bd727fef7c458ee8c833385c"
+
+-- The rotational-star solver: KusKabsch.lean's rank-1 completion and its checks moved there.
+require RotationStar from git
+  "https://github.com/V-Sekai-fire/contract-rotation-star.git" @ "b70e19a627b3e6de19c4b52359406f771fae51c0" / "lean"
 
 -- Parquet/CSV/JSON I/O for the sim, via the DuckDB FFI library. `lake update lean_duckdb` vendors the
 -- DuckDB binary into the dependency checkout automatically (its post_update hook).
